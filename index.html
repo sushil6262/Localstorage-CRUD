@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+    <style>
+        .tabletr{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <div class="jumbotron" style="background-color:rgb(87,255,134);">
+        <h1 class="text-center" style="font-family:'Advent Pro', sans-serif;">Localstorage</h1>
+        <p></p>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover" id="table">
+                            <thead>
+                                <tr class="tabletr">
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id ="tbody"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form id="form">
+                        <input required class="form-control" type="text" placeholder="Name" id="name" style="margin:0px;margin-bottom:24px;">
+                        <input required class="form-control" type="number" placeholder="Age" id="age">
+                        <button class="btn btn-primary btn-sm float-right" style="margin-top:16px;margin-right:17px;" id="submit">Submit</button>
+                    </form>
+                <button class="btn btn-secondary btn-sm float-right" onclick="resetform()" style="margin-top:16px;margin-right:16px;">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
